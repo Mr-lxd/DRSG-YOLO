@@ -1,0 +1,11 @@
+
+#train: /data/data/train
+train: D:/DL_Project/data/train
+
+val: D:/DL_Project/data/val
+
+test: D:/DL_Project/data/test
+
+nc: 2
+
+names: ['yes','no']
