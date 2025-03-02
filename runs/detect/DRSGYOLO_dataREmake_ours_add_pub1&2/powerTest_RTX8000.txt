@@ -1,0 +1,57 @@
+(torch) root@dshohvwakqyqkymo-snow-7bb4c954bd-mc4q8:/data/ultralytics-main# python PowerTest.py
+Ultralytics YOLOv8.2.48 🚀 Python-3.10.14 torch-2.3.1 CUDA:0 (Quadro RTX 8000, 45541MiB)
+ultralytics\cfg\models\v8\models\YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients
+2025-02-27 19:14:41,972 - INFO - Starting warmup...
+Warmup: 100%|█████████████████████████████████████████████████████████████████████████| 200/200 [00:05<00:00, 34.82it/s]
+2025-02-27 19:14:47,717 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-27 19:14:47,718 - INFO - Power monitoring started
+2025-02-27 19:15:17,835 - INFO - Power monitoring stopped
+2025-02-27 19:15:17,836 - INFO - Baseline power: 64.19W (min: 59.30W, max: 185.45W)
+2025-02-27 19:15:17,836 - INFO - Testing latency...
+Latency Test: 100%|█████████████████████████████████████████████████████████████████| 1000/1000 [00:27<00:00, 35.74it/s]
+2025-02-27 19:15:45,820 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-27 19:15:45,821 - INFO - Power monitoring started
+Inference Power Test: 100%|███████████████████████████████████████████████████████████| 100/100 [00:02<00:00, 36.96it/s]
+2025-02-27 19:15:48,930 - INFO - Power monitoring stopped
+2025-02-27 19:15:48,931 - INFO - Inference power: 198.72W (min: 196.07W, max: 203.68W)
+2025-02-27 19:15:48,931 - INFO -
+==================================================
+2025-02-27 19:15:48,931 - INFO - Performance and Power Test Results:
+2025-02-27 19:15:48,931 - INFO - Model weights: /data/best.pt Size: 7.0MB
+2025-02-27 19:15:48,931 - INFO - Batch size: 1, Image size: [640, 640]
+2025-02-27 19:15:48,931 - INFO - Latency: 0.02792s ± 0.00030s
+2025-02-27 19:15:48,931 - INFO - FPS: 35.8
+2025-02-27 19:15:48,931 - INFO - Baseline power: 64.19W
+2025-02-27 19:15:48,931 - INFO - Inference power: 198.72W
+2025-02-27 19:15:48,931 - INFO - Incremental power: 134.53W
+2025-02-27 19:15:48,931 - INFO - Efficiency (FPS/W): 0.27
+2025-02-27 19:15:48,931 - INFO - ==================================================
+
+
+(torch) root@iamqawptylsxmupe-snow-5696488449-lfqqz:/data/ultralytics-main# python power_benchmark.py
+Ultralytics YOLOv8.2.48 🚀 Python-3.10.14 torch-2.3.1 CUDA:0 (Quadro RTX 8000, 48589MiB)
+ultralytics\cfg\models\v8\models\YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients
+2025-02-28 16:49:18,111 - INFO - Loaded 45 images from /data/images
+2025-02-28 16:49:18,111 - INFO - Starting warmup...
+Warmup: 100%|█████████████████████████████████████████████████████████████████████████| 200/200 [00:08<00:00, 24.49it/s]
+2025-02-28 16:49:26,772 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-28 16:49:26,773 - INFO - Power monitoring started
+2025-02-28 16:49:57,024 - INFO - Power monitoring stopped
+2025-02-28 16:49:57,025 - INFO - Baseline power: 58.55W (min: 57.54W, max: 68.47W)
+2025-02-28 16:49:57,025 - INFO - Testing latency with real images...
+Latency Test: 100%|█████████████████████████████████████████████████████████████████| 1000/1000 [00:45<00:00, 22.15it/s]
+2025-02-28 16:50:42,343 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-28 16:50:42,344 - INFO - Power monitoring started
+Inference Power Test: 100%|███████████████████████████████████████████████████████████| 100/100 [00:05<00:00, 18.62it/s]
+2025-02-28 16:50:47,973 - INFO - Power monitoring stopped
+2025-02-28 16:50:47,974 - INFO - Inference power: 81.30W (Δ 22.76W)
+2025-02-28 16:50:48,037 - INFO -
+==================================================
+2025-02-28 16:50:48,037 - INFO - Weights: /data/best.pt (7.0MB)
+2025-02-28 16:50:48,037 - INFO - Device: cuda:0 | Batch: 1 | Imgs: [640, 640]
+2025-02-28 16:50:48,037 - INFO - Latency: 0.02557s ± 0.00096s
+2025-02-28 16:50:48,037 - INFO - FPS: 39.1
+2025-02-28 16:50:48,037 - INFO - Baseline power: 58.55W
+2025-02-28 16:50:48,037 - INFO - Inference power: 81.30W (Δ 22.76W)
+2025-02-28 16:50:48,037 - INFO - Efficiency: 1.72 FPS/W
+2025-02-28 16:50:48,037 - INFO - ==================================================

@@ -1,0 +1,26 @@
+Ultralytics YOLOv8.2.48 🚀 Python-3.9.2 torch-1.8.1 CPU (Cortex-A72)
+ultralytics\cfg\models\v8\models\YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients, 54.2 GFLOPs
+2025-02-28 12:33:35,228 - INFO - Loaded 45 images from /home/pi/mytest/images
+2025-02-28 12:33:35,229 - INFO - Starting warmup...
+Warmup: 100%|███████████████████████████████████| 10/10 [03:27<00:00, 20.71s/it]
+2025-02-28 12:37:02,428 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-28 12:37:02,429 - INFO - Power monitoring started
+2025-02-28 12:37:33,082 - INFO - Power monitoring stopped
+2025-02-28 12:37:33,083 - INFO - Baseline power: 0.12W (min: 0.05W, max: 1.32W)
+2025-02-28 12:37:33,083 - INFO - Testing latency with real images...
+Latency Test: 100%|███████████████████████████| 100/100 [34:50<00:00, 20.90s/it]
+2025-02-28 13:12:23,568 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-28 13:12:23,569 - INFO - Power monitoring started
+Inference Power Test: 100%|███████████████████| 100/100 [37:51<00:00, 22.72s/it]
+2025-02-28 13:50:15,963 - INFO - Power monitoring stopped
+2025-02-28 13:50:15,965 - INFO - Inference power: 1.39W (Δ 1.27W)
+2025-02-28 13:50:16,110 - INFO -
+==================================================
+2025-02-28 13:50:16,111 - INFO - Weights: /home/pi/mytest/best.pt (7.0MB)
+2025-02-28 13:50:16,112 - INFO - Device: cpu | Batch: 1 | Imgs: [640, 640]
+2025-02-28 13:50:16,112 - INFO - Latency: 20.87066s ± 0.41919s
+2025-02-28 13:50:16,113 - INFO - FPS: 0.0
+2025-02-28 13:50:16,113 - INFO - Baseline power: 0.12W
+2025-02-28 13:50:16,113 - INFO - Inference power: 1.39W (Δ 1.27W)
+2025-02-28 13:50:16,113 - INFO - Efficiency: 0.04 FPS/W
+2025-02-28 13:50:16,113 - INFO - ==================================================

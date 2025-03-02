@@ -1,0 +1,91 @@
+Ultralytics YOLOv8.2.48 🚀 Python-3.9.19 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
+YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients, 54.2 GFLOPs
+2025-02-27 16:28:23,624 - INFO - Starting warmup...
+Warmup: 100%|██████████| 200/200 [00:10<00:00, 19.30it/s]
+2025-02-27 16:28:34,092 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-27 16:28:34,095 - INFO - Power monitoring started
+2025-02-27 16:29:04,509 - INFO - Power monitoring stopped
+2025-02-27 16:29:04,520 - INFO - Baseline power: 7.84W (Min: 3.58W, Max: 74.81W)
+2025-02-27 16:29:04,520 - INFO - Testing latency...
+Latency test: 100%|██████████| 1000/1000 [00:48<00:00, 20.50it/s]
+2025-02-27 16:29:53,299 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-27 16:29:53,299 - INFO - Power monitoring started
+Inference power test: 100%|██████████| 100/100 [00:04<00:00, 21.05it/s]
+2025-02-27 16:29:58,534 - INFO - Power monitoring stopped
+2025-02-27 16:29:58,534 - INFO - Inference power: 78.11W (Min: 77.36W, Max: 79.46W)
+2025-02-27 16:29:58,534 - INFO -
+==================================================
+2025-02-27 16:29:58,534 - INFO - Performance and Power Test Results:
+2025-02-27 16:29:58,534 - INFO - Model weights: D:/DL_Project/ultralytics-main/runs/detect/DRSGYOLO_dataREmake_ours_add_pub1&2/weights/best.pt Size: 7.0MB
+2025-02-27 16:29:58,534 - INFO - Batch size: 1, Image size: [640, 640]
+2025-02-27 16:29:58,534 - INFO - Latency: 0.04872s ± 0.00685s
+2025-02-27 16:29:58,534 - INFO - FPS: 20.5
+2025-02-27 16:29:58,534 - INFO - Baseline power: 7.84W
+2025-02-27 16:29:58,534 - INFO - Inference power: 78.11W
+2025-02-27 16:29:58,534 - INFO - Incremental power: 70.27W
+2025-02-27 16:29:58,534 - INFO - Efficiency (FPS/W): 0.29
+2025-02-27 16:29:58,534 - INFO - ==================================================
+
+
+
+
+D:\Anaconda3\envs\yolov8_SeedGermination\python.exe D:\DL_Project\ultralytics-main\power_benchmark.py
+Ultralytics YOLOv8.2.48 🚀 Python-3.9.19 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
+YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients, 54.2 GFLOPs
+2025-02-27 21:30:01,263 - INFO - Loaded 45 images from D:/dataset_split_pick/test/images
+2025-02-27 21:30:01,266 - INFO - Starting warmup...
+Warmup: 100%|██████████| 200/200 [00:34<00:00,  5.85it/s]
+2025-02-27 21:30:36,565 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-27 21:30:36,570 - INFO - Power monitoring started
+2025-02-27 21:31:06,954 - INFO - Power monitoring stopped
+2025-02-27 21:31:06,960 - INFO - Baseline power: 6.14W (min: 4.13W, max: 20.82W)
+2025-02-27 21:31:06,960 - INFO - Testing latency with real images...
+Latency Test: 100%|██████████| 1000/1000 [02:26<00:00,  6.81it/s]
+2025-02-27 21:33:34,664 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-27 21:33:34,666 - INFO - Power monitoring started
+Inference Power Test: 100%|██████████| 100/100 [00:16<00:00,  5.89it/s]
+2025-02-27 21:33:52,563 - INFO - Power monitoring stopped
+2025-02-27 21:33:52,564 - INFO - Inference power: 33.56W (min: 6.36W, max: 76.12W)
+2025-02-27 21:33:53,113 - INFO -
+==================================================
+2025-02-27 21:33:53,116 - INFO - Weights: runs/detect/DRSGYOLO_dataREmake_ours_add_pub1&2/weights/best.pt (7.0MB)
+2025-02-27 21:33:53,116 - INFO - Device: cuda:0 | Batch: 1 | Imgs: [640, 640]
+2025-02-27 21:33:53,116 - INFO - Latency: 0.05510s ± 0.03679s
+2025-02-27 21:33:53,116 - INFO - FPS: 18.1 | Power: 33.56W
+2025-02-27 21:33:53,116 - INFO - Efficiency: 0.54 FPS/W
+2025-02-27 21:33:53,117 - INFO - ==================================================
+
+Process finished with exit code 0
+
+
+
+
+D:\Anaconda3\envs\yolov8_SeedGermination\python.exe D:\DL_Project\ultralytics-main\power_benchmark.py
+Ultralytics YOLOv8.2.48 🚀 Python-3.9.19 torch-2.4.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
+YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients, 54.2 GFLOPs
+2025-02-27 22:14:53,230 - INFO - Loaded 45 images from D:/dataset_split_pick/test/images
+2025-02-27 22:14:53,230 - INFO - Starting warmup...
+Warmup: 100%|██████████| 200/200 [00:31<00:00,  6.37it/s]
+2025-02-27 22:15:25,634 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-27 22:15:25,636 - INFO - Power monitoring started
+2025-02-27 22:15:56,087 - INFO - Power monitoring stopped
+2025-02-27 22:15:56,099 - INFO - Baseline power: 5.35W (min: 3.36W, max: 21.49W)
+2025-02-27 22:15:56,099 - INFO - Testing latency with real images...
+Latency Test: 100%|██████████| 1000/1000 [02:29<00:00,  6.68it/s]
+2025-02-27 22:18:26,554 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-27 22:18:26,555 - INFO - Power monitoring started
+Inference Power Test: 100%|██████████| 100/100 [00:17<00:00,  5.84it/s]
+2025-02-27 22:18:44,362 - INFO - Power monitoring stopped
+2025-02-27 22:18:44,366 - INFO - Inference power: 29.72W (Δ 24.37W)
+2025-02-27 22:18:44,911 - INFO -
+==================================================
+2025-02-27 22:18:44,911 - INFO - Weights: runs/detect/DRSGYOLO_dataREmake_ours_add_pub1&2/weights/best.pt (7.0MB)
+2025-02-27 22:18:44,911 - INFO - Device: cuda:0 | Batch: 1 | Imgs: [640, 640]
+2025-02-27 22:18:44,911 - INFO - Latency: 0.05499s ± 0.04541s
+2025-02-27 22:18:44,911 - INFO - FPS: 18.2
+2025-02-27 22:18:44,911 - INFO - Baseline power: 5.35W
+2025-02-27 22:18:44,911 - INFO - Inference power: 29.72W (Δ 24.37W)
+2025-02-27 22:18:44,911 - INFO - Efficiency: 0.75 FPS/W
+2025-02-27 22:18:44,911 - INFO - ==================================================
+
+Process finished with exit code 0

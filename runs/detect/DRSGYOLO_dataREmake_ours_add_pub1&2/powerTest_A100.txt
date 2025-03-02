@@ -1,0 +1,27 @@
+(torch) root@oilkegkrxlulwewv-wind-78577c7d4f-zzz92:/data# python power_benchmark.py
+Ultralytics YOLOv8.2.48 🚀 Python-3.10.14 torch-2.3.1 CUDA:0 (NVIDIA A100-PCIE-40GB, 40326MiB)
+ultralytics\cfg\models\v8\models\YOLOv8-SPDConvOriginV3-RFAConv summary (fused): 211 layers, 3477878 parameters, 0 gradients
+2025-02-27 22:44:25,877 - INFO - Loaded 45 images from /data/images
+2025-02-27 22:44:25,877 - INFO - Starting warmup...
+Warmup: 100%|█████████████████████████████████████████████████████████████████████████| 200/200 [00:04<00:00, 40.60it/s]
+2025-02-27 22:44:31,035 - INFO - Starting baseline power measurement (30 seconds)...
+2025-02-27 22:44:31,036 - INFO - Power monitoring started
+2025-02-27 22:45:01,882 - INFO - Power monitoring stopped
+2025-02-27 22:45:01,882 - INFO - Baseline power: 38.39W (min: 36.89W, max: 58.23W)
+2025-02-27 22:45:01,882 - INFO - Testing latency with real images...
+Latency Test: 100%|█████████████████████████████████████████████████████████████████| 1000/1000 [00:23<00:00, 41.73it/s]
+2025-02-27 22:45:25,925 - INFO - Starting inference power measurement (100 iterations)...
+2025-02-27 22:45:25,925 - INFO - Power monitoring started
+Inference Power Test: 100%|███████████████████████████████████████████████████████████| 100/100 [00:02<00:00, 41.04it/s]
+2025-02-27 22:45:29,031 - INFO - Power monitoring stopped
+2025-02-27 22:45:29,032 - INFO - Inference power: 151.70W (Δ 113.31W)
+2025-02-27 22:45:29,057 - INFO -
+==================================================
+2025-02-27 22:45:29,057 - INFO - Weights: /data/best.pt (7.0MB)
+2025-02-27 22:45:29,058 - INFO - Device: cuda:0 | Batch: 1 | Imgs: [640, 640]
+2025-02-27 22:45:29,058 - INFO - Latency: 0.01285s ± 0.00063s
+2025-02-27 22:45:29,058 - INFO - FPS: 77.8
+2025-02-27 22:45:29,058 - INFO - Baseline power: 38.39W
+2025-02-27 22:45:29,058 - INFO - Inference power: 151.70W (Δ 113.31W)
+2025-02-27 22:45:29,058 - INFO - Efficiency: 0.69 FPS/W
+2025-02-27 22:45:29,058 - INFO - ==================================================
